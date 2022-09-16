@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet"> 
+        
+    <title>Frontend Mentor | Interactive card details form</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+  </head>
+  <body>
+    <main>
+      <div class="main-wrapper">
+        <section class="col col-33 col-left-side">
+
+          <div class="elem elem-card elem-card__front">
+            <div class="elem elem-card elem-card__front-top"></div>
+            <div class="elem elem-card elem-card__front-mid">
+              0000 0000 0000 0000
+            </div>
+            <div class="elem elem-card elem-card__front-bot">
+              <div class="elem elem-card elem-card__front-bot__name">Jane Appleseed</div>
+              <div class="elem elem-card elem-card__front-bot__date">00/00</div>
+            </div>
+
+          </div>
+
+
+
+
+          <div class="elem elem-card elem-card__back">
+            <div class="elem elem-card elem-card__back-top"></div>
+            <div class="elem elem-card elem-card__back-mid"></div>
+            <div class="elem elem-card elem-card__back-bot"></div>
+          </div>
+
+
+
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <section class="col col-66 col-right-side">
+
+
+          <form class="elem elem-form" action="">
+
+            <!-- CARDHOLDER NAME -->
+
+            <div class="border-wrapper">
+              <div class="input-wrapper input-wrapper__name">
+                <label for="name">Cardholder Name</label>
+                <input type="text" id="name" placeholder="eg. Jane Appleseed">
+              </div>
+            <!-- CARDHOLDER NAME END -->
+
+            <!-- CARD NUMBER -->
+              <div class="input-wrapper input-wrapper__date-cvc">
+
+              <div class="input-wrapper input-wrapper__card-num">
+                <label for="card-number">Card Number</label>
+                <input class="elem elem-input elem-input__card-num" type="text" placeholder="eg. 1234 5678 9101 1121">
+              </div>
+            <!-- CARD NUMBER END -->
+
+            <!-- CARD EXPIRATION DATE AND CVC -->
+              <div class="input-wrapper input-wrapper__expire-cvc">
+                  <div class=" input-wrapper input-wrapper__expire">
+
+                    <div class="input-wrapper input-wrapper__month">
+                      <label for="expire">MM</label>
+                      <input type="text" size="2" maxlength="2">
+                    </div>
+
+                    <div class="input-wrapper input-wrapper__year">
+                      <label for="expire">YY</label>
+                      <input type="text" size="2" maxlength="4">
+                    </div>
+
+                    <div class="input-wrapper input-wrapper__cvc">
+                      <label for="cvc">CVC</label>
+                      <inputtype="text" size="3">
+                    </div>
+                </div>
+                </div>
+              </div>
+            <!-- DATE CVC END -->
+              <button class="btn btn__btn-submit" type="submit">Confirm</button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+
+   
+    
+    
+  
+    <script src="js/script.js"></script>
+  </body>
+</html>

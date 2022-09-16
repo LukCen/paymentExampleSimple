@@ -1,0 +1,150 @@
+@import 'variables';
+@import 'typography';
+@import 'components';
+
+body {
+    display: flex;
+   
+}
+
+.main-wrapper {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.col-left-side {
+    background-color: $col-violet-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.col-right-side {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $col-white;
+
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+
+.border-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: .7rem;
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 5px 5px 5px;
+
+    &__month, &__year, &__cvc{
+        width: 33.33333%;
+    }
+
+    &__expire {
+        flex-direction: row;
+        width: 100%;
+        justify-content: space-evenly;
+        
+    }
+
+    &__expire-cvc {
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        margin: 0 auto;
+        
+    }
+
+    &__date-cvc {
+        width:100%;
+        
+    }
+}
+
+.btn {
+    height: 1.8rem;
+    width: 100%;
+    &__btn-submit {
+        color: $col-white;
+        background-color: $col-violet-dark;
+        border: none;
+        padding: 5px;
+        border-radius: 5px;
+        position: relative;
+
+        &:hover {
+            background-color: rgba($col-blue, .9);
+            box-shadow: 0 0 5px blue;
+        }
+    }
+}
+
+.elem-card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 30%;
+    justify-content: center;
+    align-items: center;
+    // border: 0.5px solid red;
+    color: $col-white;
+    letter-spacing: 2.5px;
+    border-radius: 5px;
+    margin: 10px 0px 10px 0px;
+
+    &__front {
+        position: relative;
+        background: $col-primary;
+        left: 30%;
+        
+        
+    }
+
+        &__front-bot{
+            flex-direction: row;
+            font-size: .75rem;
+            
+        }
+
+    &__back {
+        position: relative;
+        left: 50%;
+        background-color: $col-gv-light;
+    }
+        &__back-top {
+            background-color: $col-gv-dark;
+            height: 25%;
+            width: 100%;
+            border-radius: 0px;
+        }
+
+        &__back-mid {
+            background-color: gray;
+            height: 20%;
+            width: 85%;
+            margin: 0 auto;
+        }
+    
+
+    }

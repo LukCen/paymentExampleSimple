@@ -1,0 +1,146 @@
+@media only screen and (max-width: 375px) {
+  .col {
+    width: 50%;
+  }
+}
+* {
+  font-family: "Space Grotesk", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  font-size: 18px;
+}
+
+.col-33 {
+  width: 33.3333%;
+}
+
+.col-66 {
+  width: 66.6777%;
+}
+
+body {
+  display: flex;
+}
+
+.main-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+
+.col-left-side {
+  background-color: hsl(278deg, 68%, 11%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-right-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(0deg, 0%, 100%);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-align: center;
+}
+
+.border-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 0.7rem;
+}
+
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5px 5px 5px 5px;
+}
+.input-wrapper__month, .input-wrapper__year, .input-wrapper__cvc {
+  width: 33.33333%;
+}
+.input-wrapper__expire {
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-evenly;
+}
+.input-wrapper__expire-cvc {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  flex-direction: row;
+  margin: 0 auto;
+}
+.input-wrapper__date-cvc {
+  width: 100%;
+}
+
+.btn {
+  height: 1.8rem;
+  width: 100%;
+}
+.btn__btn-submit {
+  color: hsl(0deg, 0%, 100%);
+  background-color: hsl(278deg, 68%, 11%);
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  position: relative;
+}
+.btn__btn-submit:hover {
+  background-color: rgba(70, 125, 245, 0.9);
+  box-shadow: 0 0 5px blue;
+}
+
+.elem-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 30%;
+  justify-content: center;
+  align-items: center;
+  color: hsl(0deg, 0%, 100%);
+  letter-spacing: 2.5px;
+  border-radius: 5px;
+  margin: 10px 0px 10px 0px;
+}
+.elem-card__front {
+  position: relative;
+  background: linear-gradient(135deg, hsl(249deg, 99%, 64%), hsl(278deg, 95%, 30%));
+  left: 30%;
+}
+.elem-card__front-bot {
+  flex-direction: row;
+  font-size: 0.75rem;
+}
+.elem-card__back {
+  position: relative;
+  left: 50%;
+  background-color: hsl(270deg, 3%, 87%);
+}
+.elem-card__back-top {
+  background-color: hsl(279deg, 9%, 55%);
+  height: 25%;
+  width: 100%;
+  border-radius: 0px;
+}
+.elem-card__back-mid {
+  background-color: gray;
+  height: 20%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */

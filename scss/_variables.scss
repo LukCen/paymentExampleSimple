@@ -1,0 +1,27 @@
+// LAYOUT
+$col-primary: linear-gradient(135deg,hsl(249,99%, 64%), hsl(278, 95%, 30%));
+
+$col-error: hsl(0, 100%, 66%);
+
+$col-white : hsl(0, 0%, 100%);
+
+$col-gv-light: hsl(270, 3%, 87%);
+$col-gv-dark: hsl(279, 9%, 55%);
+$col-violet-dark: hsl(278, 68%, 11%);
+$col-blue: rgb(70, 125, 245);
+
+
+
+// TYPOGRAPHY
+
+
+
+
+
+
+
+@media only screen and (max-width: 375px){
+    .col {
+        width: 50%;
+    }
+};
