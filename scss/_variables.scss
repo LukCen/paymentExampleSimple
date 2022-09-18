@@ -12,16 +12,9 @@ $col-blue: rgb(70, 125, 245);
 
 
 
-// TYPOGRAPHY
+// Mobile-first content scaling
 
-
-
-
-
-
-
-@media only screen and (max-width: 375px){
-    .col {
-        width: 50%;
-    }
-};
+$screen-xl: 1240px; // desktop
+$screen-l: 966px; // laptop
+$screen-m: 768px; // tablet 
+$screen-s: 540px; // mobile
