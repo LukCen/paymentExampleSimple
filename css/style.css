@@ -50,6 +50,25 @@ form {
   text-align: center;
 }
 
+.form-submit {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+  display: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  width: 100%;
+}
+
+h1 {
+  position: relative;
+  top: -20%;
+  font-size: 2rem;
+}
+
 .border-wrapper {
   display: flex;
   align-items: center;
@@ -171,6 +190,10 @@ form {
   .elem-card {
     display: none;
   }
+
+  h1 {
+    font-size: 1.5rem;
+  }
 }
 @media only screen and (max-width: 540px) {
   .col-left-side {
@@ -179,6 +202,10 @@ form {
 
   .col-right-side {
     width: 100vh;
+  }
+
+  h1 {
+    font-size: 1.5rem;
   }
 
   form, .border-wrapper, .input-wrapper__name {

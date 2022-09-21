@@ -40,29 +40,26 @@
           </div>
 
 
-
-
         </section>
-
-
-
-
-
-
-
-
 
         <section class="col col-66 col-right-side">
 
+          <!-- this shows after you press the button -->
+          <div class="form-submit">
+            <button class="btn btn__reset" type="button"><a href="#">Reset</a></button>
+          </div>
+          <!-- FORM SUBMIT END-->
+
 
           <form class="elem elem-form" action="">
+            <h1>Fill out the fields below :</h1>
 
             <!-- CARDHOLDER NAME -->
 
             <div class="border-wrapper">
               <div class="input-wrapper input-wrapper__name">
                 <label for="name">Cardholder Name</label>
-                <input type="text" id="name" placeholder="eg. Jane Appleseed">
+                <input type="text" id="card_name" placeholder="eg. Jane Appleseed">
               </div>
             <!-- CARDHOLDER NAME END -->
 
@@ -71,7 +68,7 @@
 
               <div class="input-wrapper input-wrapper__card-num">
                 <label for="card-number">Card Number</label>
-                <input class="elem elem-input elem-input__card-num" type="text" placeholder="eg. 1234 5678 9101 1121">
+                <input id="card_number" class="elem elem-input elem-input__card-num" type="text" placeholder="eg. 1234 5678 9101 1121">
               </div>
             <!-- CARD NUMBER END -->
 
@@ -81,32 +78,32 @@
 
                     <div class="input-wrapper input-wrapper__month">
                       <label for="expire">MM</label>
-                      <input type="text" size="2" maxlength="2" placeholder="00">
+                      <input id="card_date_month" type="text" size="2" maxlength="2">
                     </div>
 
                     <div class="input-wrapper input-wrapper__year">
                       <label for="expire">YY</label>
-                      <input type="text" size="2" maxlength="4" placeholder="1995">
+                      <input id="card_date_year" type="text" size="2" maxlength="4" placeholder="1995">
                     </div>
 
                     <div class="input-wrapper input-wrapper__cvc">
                       <label for="cvc">CVC</label>
-                      <input type="text" size="3" placeholder="123">
+                      <input id="card_cvc" type="text" size="3" placeholder="123" maxlength="3">
                     </div>
                 </div>
                 </div>
               </div>
             <!-- DATE CVC END -->
-              <button class="btn btn__btn-submit" type="submit">Confirm</button>
+
+
+              <button class="btn btn__btn-submit" type="button">Confirm</button>
             </div>
           </form>
         </section>
       </div>
     </main>
 
-   
-    
-    
+       
   
     <script src="js/script.js"></script>
   </body>
