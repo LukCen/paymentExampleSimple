@@ -36,18 +36,18 @@ btn.addEventListener('click', () => {
     submitResult.style.justifyContent = 'space-evenly';
     
     if(cardName.length === 0){
-        submitResult.innerHTML = `${btnPressed.error}. Check the "name" field for any mistakes and try again.` 
+        submitResult.innerHTML = `${btnPressed.error}<br>Check the "name" field for any mistakes and try again.` 
 
         submitResult.appendChild(btnReset);
 
     } else if(cardNumber.length < 12 || cardNumber.length > 14){
-        submitResult.innerHTML = `${btnPressed.error}. Your card number doesn't seem to be correct, please check it for any errors, and try again.`
+        submitResult.innerHTML = `${btnPressed.error}<br>Your card number doesn't seem to be correct, please check it for any errors, and try again.`
 
         submitResult.appendChild(btnReset);
 
 
     } else if(cardMonth.length < 2 && cardYear.length < 4 && cardCvc.length < 3){
-        submitResult.innerHTML = `${btnPressed.error}. The date or CVC number you input do not seem to be correct. Please check them for any errors, and try again.`
+        submitResult.innerHTML = `${btnPressed.error}<br>The date or CVC number you input do not seem to be correct. Please check them for any errors, and try again.`
 
     } else {
 
